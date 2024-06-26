@@ -1,5 +1,9 @@
 # Simple Calculator GUI App
 
+## Author
+
+[Asmaa Hamid](https://linktr.ee/asmaahamid02)
+
 ## Description
 
 > This is a simple calculator GUI app implemented using PyQt6 and python with simple arithmetic operations (addition, subtraction, multiplication, division)
@@ -80,7 +84,3 @@
    ```
    python calculator.py
    ```
-
-## Author
-
-> [Asmaa Hamid](https://linktr.ee/asmaahamid02)

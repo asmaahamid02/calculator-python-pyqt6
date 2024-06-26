@@ -48,13 +48,15 @@ class Calculator(QMainWindow):
         colSpan = 1
 
         for button_text in buttons:
+            style = 'font-size: 20px; padding: 10px; border-radius: 20px; margin: 3px 2px; background-color: #313131; color: white;'
             button = QPushButton(button_text)
-            button.setStyleSheet('font-size: 20px; padding: 10px; border-radius: 20px; margin: 3px 2px; background-color: #313131; color: white;')
 
             if button_text in  ['/', '*', '-', '+', '=']:
-                button.setStyleSheet('background-color: #F78E01; color: white;')
+                button.setStyleSheet(f'{style} background-color: #F78E01; color: white;')
             elif button_text in ['C', 'Del']:
-                button.setStyleSheet('background-color: #A1A1A1; color: black;')
+                button.setStyleSheet(f'{style} background-color: #A1A1A1; color: black;')
+            else:
+                button.setStyleSheet(style)    
                 
             button.clicked.connect(self.click_handler)
             button.setSizePolicy(QSizePolicy.Policy.Expanding, QSizePolicy.Policy.Expanding)
